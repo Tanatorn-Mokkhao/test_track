@@ -4,7 +4,7 @@ import VueGtag from "vue-gtag";
 import vuetify from "./plugins/vuetify";
 
 Vue.use(VueGtag, {
-  config: { id: "G-E7H9B0YMQ6" },
+  config: { id: "G-MX9NJ6SMH0" },
 });
 export default {
   name: "MyComponent",
