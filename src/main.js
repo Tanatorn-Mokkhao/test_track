@@ -1,8 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import VueGtag from "vue-gtag";
+import vuetify from "./plugins/vuetify";
 
-Vue.config.productionTip = false
+Vue.use(VueGtag, {
+  config: { id: "UA-197670238-1" },
+});
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");
